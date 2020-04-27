@@ -16,7 +16,7 @@ Manejo de errores
 -----------------
 
 Cuando ocurre un error, el intérprete imprime un mensaje de error y la traza
-del error.  En el modo interactivo, luego retorna al prompt primario; cuando la
+del error.  En el modo interactivo, retorna al prompt primario cuando la
 entrada viene de un archivo, el programa termina con código de salida distinto
 a cero luego de imprimir la traza del error. (Las excepciones manejadas por una
 clausula :keyword:`except` en una sentencia :keyword:`try` no son errores en
@@ -28,8 +28,8 @@ las salidas normales de comandos ejecutados se escriben en la salida estándar.
 
 Al ingresar el caracter de interrupción (por lo general :kbd:`Control-C` o :kbd:`Supr`) en el
 prompt primario o secundario, se cancela la entrada y retorna al prompt
-primario.  [#]_ Tipear una interrupción mientras un comando se están ejecutando
-lanza la excepción :exc:`KeyboardInterrupt`, que puede ser manejada con una
+primario.  [#]_ Tipear una interrupción mientras un comando se esta ejecutando
+lanza la excepción :exc:`KeyboardInterrupt`, que deberia ser manejada con una
 sentencia :keyword:`try`.
 
 
@@ -122,6 +122,6 @@ el administrador de la computadora en el directorio global de paquetes para el
 sistema, y se importa antes que :mod:`usercustomize`. Para más detalles, mirá
 la documentación del módulo :mod:`site`.
 
-.. rubric:: Footnotes
+.. rubric:: Notas al pie.
 
-.. [#] A problem with the GNU Readline package may prevent this.
+.. [#] Un problema con el paquete GNU Readline puede evitar esto.
